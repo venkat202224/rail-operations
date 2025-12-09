@@ -1,6 +1,6 @@
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
-import Headers from "./Rail-Dev/Headder.Component";
+import Headers from "./Rail-Dev/RailHeader.Component";
 import Home from "./Rail-Dev/Home.Component";
 import Submission from "./Rail-Dev/Submission.Component";
 import Crew from "./Rail-Dev/Crew.Component";
@@ -9,17 +9,17 @@ import Terminal from "./Rail-Dev/Terminal.Component";
 function App() {
   return (
     <>
-      <Headers/>
+      <Headers />
       <div className="main-sections">
-      <Routes>
-        <Route path="home" element={<Home />}></Route>
-        <Route path="submission" element={<Submission />}></Route>
-        <Route path="crew" element={<Crew />}></Route>
-        <Route path="terminal" element={<Terminal />}></Route>
-      </Routes>
+        <Routes>
+          <Route path="home" element={<Home />}></Route>
+          <Route path="submission" element={<Submission />}></Route>
+          <Route path="crew" element={<Crew />}></Route>
+          <Route path="terminal" element={<Terminal />}></Route>
+        </Routes>
       </div>
       <div className="footer">
-<p>www.railtechgroups.com.in | @copyrights</p>
+        <p>www.RailTechGroups.com.in | @copyrights</p>
       </div>
     </>
   );

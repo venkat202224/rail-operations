@@ -1,0 +1,228 @@
+/* #root {
+  max-width: 1280px;
+  padding:0 2rem 2rem 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #0f0b0b;
+}
+table , th , td{
+color: black;
+border: 1px solid black;
+padding: 5px;
+}
+
+.header{
+  margin-top: 0;
+} */
+
+/* 
+.loginSection{
+align-items: center;
+margin: 10px auto;
+padding: 10px;
+border: 1px solid black;
+width: 300px;
+height: 500px;
+
+}
+
+.loginSection label , input {
+
+margin: 10px;
+padding: 1px;
+}
+ */
+.error ,p{
+  color: red;
+}
+
+.Section {
+  width: 380px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  font-family: "Poppins", sans-serif;
+  transition: 0.3s ease-in-out;
+}
+
+.Section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+.Section h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #555;
+}
+
+input {
+  width: 100%;
+  padding: 12px 13px;
+  margin: 6px 0 5px;
+  border: 1.5px solid #d7d7d7;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.25s;
+}
+
+input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 6px rgba(74, 144, 226, 0.35);
+}
+
+p {
+  margin: 0 0 8px;
+  font-size: 13px;
+  color: red;
+  height: 14px; /* Keeps space even if no error */
+}
+
+button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 12px 0;
+  background: linear-gradient(135deg, #4a90e2, #357abd);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #357abd, #2460a6);
+  transform: scale(1.03);
+}
+
+button:active {
+  transform: scale(0.97);
+}
+/* 
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+ 
+}
+
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+tbody{
+
+   overflow-x: scroll;
+  z-index: 1000;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+ */
+
+/* DropDown code */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 250px;
+}
+
+.dropbtn {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #888;
+  border-radius: 4px;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  border: 1px solid #ccc;
+  margin-top: 4px;
+  max-height: 220px;
+  overflow-y: auto;
+  z-index: 1000;
+  padding: 6px 0;
+  border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content,
+.dropbtn:focus + .dropdown-content {
+  display: block;
+}
+
+
+.dropdown-content a {
+  display: block;
+  padding: 8px 10px;
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.dropdown-content a:hover {
+  background: #f5f5f5;
+}
+
+.dropdown-content a:last-child {
+  border-bottom: none;
+}
+
+
+
+/* Rail tech css

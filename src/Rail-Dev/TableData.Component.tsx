@@ -1,6 +1,7 @@
 const TableData = (props:any)=> {
 
     return <>
+    <div className="table-container">
      <table>
       <thead>
         <tr>
@@ -39,6 +40,7 @@ const TableData = (props:any)=> {
         })}
       </tbody>
     </table>
+    </div>
     </>
 }
 export default TableData;

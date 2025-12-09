@@ -371,9 +371,28 @@ const Home = () => {
       ],
     },
   };
+
+// const [isModalOpen, setIsModalOpen] = useState(false);
+
+//   const openModal = () => setIsModalOpen(true);
+//   const closeModal = () => setIsModalOpen(false);
+
+
+
   return (
     <>
       <h1>Home Component</h1>
+
+{/* <div>
+      <h1>My Application</h1>
+      <button onClick={openModal}>Open Dialog</button>
+      
+      <Modal isOpen={isModalOpen} onClose={closeModal}>
+        <h2>Welcome!</h2>
+        <p>This is a native HTML dialog in React.</p>
+      </Modal>
+    </div> */}
+
       <TableData systemData={systemData.response.properties}  />
     </>
   );

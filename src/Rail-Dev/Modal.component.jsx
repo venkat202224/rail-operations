@@ -4,8 +4,7 @@ import TableData from "./TableData.Component";
 import Home from "./Home.Component";
 
 const Modal = ({ showModal, sendData}) => {
-  console.log(sendData)
-  return (
+    return (
     <div className="modal-section">
       <div className="overlay">
         <div className="modal-content">

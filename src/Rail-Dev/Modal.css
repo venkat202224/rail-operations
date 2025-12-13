@@ -22,7 +22,7 @@
 
 /* Modal Box */
 .modal-content {
- position: absolute;
+    position: absolute;
     background: #fff;
     width: 400px;
     padding: 25px;

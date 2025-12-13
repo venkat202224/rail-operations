@@ -142,20 +142,20 @@ tbody tr:hover {
   background-color: #121212;
   padding: 10px;
   cursor: pointer;
+  margin-bottom: 10px;
 
 }
 .side-menu{
-
 position: fixed;
 background-color: #446f9c;
 padding: 10px;
 color: white;
 height: 100%;
-    top: -15px;
-    padding: 30px;
-    right: -270px;
-    width:200px;
-    transition:right 0.9s ease;
+top: -15px;
+padding: 30px;
+right: -270px;
+width:200px;
+transition:right 0.9s ease;
 }
 
 .side-menu.open {

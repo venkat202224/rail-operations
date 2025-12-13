@@ -42,9 +42,8 @@ const TableData = (props) => {
                   <td>
                     {" "}
                     <button
-                      className="deleteBtn"
-                     
-                      onClick={() => props.deleteRow(item)}>Delete </button>
+                      className="deleteBtn"              
+                      onClick={() => props.deleteRow(item)}>Delete</button>
                   </td>
                 </tr>
               );

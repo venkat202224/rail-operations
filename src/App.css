@@ -122,7 +122,7 @@ p {
   color: red;
   height: 14px; /* Keeps space even if no error */
 }
-
+/* 
 button {
   width: 100%;
   margin-top: 15px;
@@ -144,7 +144,7 @@ button:hover {
 
 button:active {
   transform: scale(0.97);
-}
+} */
 /* 
 
 table {
@@ -225,4 +225,27 @@ tr:nth-child(even) {
 
 
 
-/* Rail tech css
+/* Rail tech css */
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}

@@ -43,7 +43,7 @@
 
 
 .nav ul li:hover {
-  background: #c9d98f;
+  background: #1c1c1a;
   transform: scale(1.05);
 
 }
@@ -71,8 +71,7 @@ border: 10px solid black;
 
 
 .nav ul li:active {
-  text-decoration: line-through;
-  background-color: #449c48 !important;
+  background-color: #d6c3e1 !important;
 }
 
 
@@ -125,4 +124,59 @@ tbody tr:nth-child(even) {
 
 tbody tr:hover {
   background: #e3e8ff;
+}
+
+.deleteBtn {
+    color: white;
+    cursor: pointer;
+    border: 1px solid rgb(10, 10, 10);
+    padding: 4px;
+    border-radius: 3px;
+    background-color: #121212;
+}
+
+/* Button */
+
+.collapsible{
+
+  background-color: #121212;
+  padding: 10px;
+  cursor: pointer;
+
+}
+.side-menu{
+
+position: fixed;
+background-color: #446f9c;
+padding: 10px;
+color: white;
+height: 100%;
+    top: -15px;
+    padding: 30px;
+    right: -270px;
+    width:200px;
+    transition:right 0.9s ease;
+}
+
+.side-menu.open {
+  right: 0;
+  background-color: #1c1c1a;
+}
+
+.side-menu li {
+    padding: 10px;
+    list-style: disc;
+    margin-top: 1px;
+}
+
+.side-menu li:hover{
+color: orange;
+transition: 0.4s ease-out;
+
+}
+.side-menu h1{
+padding: 0;
+font-size: 25px;
+margin-left: -20px;
+
 }

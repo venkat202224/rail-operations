@@ -1,4 +1,6 @@
+import { useState } from "react";
 import TableData from "./TableData.Component";
+import Modal from "./Modal.component";
 
 const Home = () => {
   const systemData = {
@@ -372,28 +374,52 @@ const Home = () => {
     },
   };
 
-// const [isModalOpen, setIsModalOpen] = useState(false);
+  const [displayModal, setDisplayModal] = useState(false);
+  const [currentTrain, setCurrentTrain] = useState("");
+  const [tableDatas, setTableDatas] = useState(systemData.response.properties);
+  const [sortTrain, setSortTrain] = useState(true);
 
-//   const openModal = () => setIsModalOpen(true);
-//   const closeModal = () => setIsModalOpen(false);
+  // sorting code
 
+  const sortTrainId = () => {
+    const sorted = [...tableDatas].sort((a, b) => {
+      return sortTrain
+        ? a.trainId.localeCompare(b.trainId)
+        : b.trainId.localeCompare(a.trainId);
+    });
+    setTableDatas(sorted);
+    setSortTrain(!sortTrain);
+    console.log(sorted);
+  };
 
+  // Delete code
+
+  const deleteRow = (item) => {
+    const updated = tableDatas.filter((row) => row.item !== item);
+    setTableDatas(updated);
+    console.log(updated);
+  };
+  console.log(deleteRow)
+
+  // pop box code
+
+  const showPopBox = (trainData) => {
+    setDisplayModal(!displayModal);
+    setCurrentTrain(trainData);
+  };
 
   return (
     <>
       <h1>Home Component</h1>
 
-{/* <div>
-      <h1>My Application</h1>
-      <button onClick={openModal}>Open Dialog</button>
-      
-      <Modal isOpen={isModalOpen} onClose={closeModal}>
-        <h2>Welcome!</h2>
-        <p>This is a native HTML dialog in React.</p>
-      </Modal>
-    </div> */}
+      {displayModal && <Modal showModal={showPopBox} sendData={currentTrain} />}
 
-      <TableData systemData={systemData.response.properties}  />
+      <TableData
+        systemData={tableDatas}
+        handleCurrentTrainIdClick={showPopBox}
+        sortTrainId={sortTrainId}
+        deleteRow={deleteRow}
+      />
     </>
   );
 };

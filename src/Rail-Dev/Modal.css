@@ -5,11 +5,13 @@
   width: 0%;
   height: 0%;
   display: flex;
-  justify-content: center;  /* Horizontal center */
+  justify-content: center;
+  /* Horizontal center */
   align-items: center;
   z-index: 999;
   position: fixed;
 }
+
 /* Dark background */
 .overlay {
   position: fixed;
@@ -22,16 +24,17 @@
 
 /* Modal Box */
 .modal-content {
-    position: absolute;
-    background: #fff;
-    width: 400px;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-    z-index: 1000;
-    animation: popUp 0.3s ease;
-    left: 30%;
-    top: 30%;}
+  position: absolute;
+  background: #fff;
+  width: 400px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  animation: popUp 0.3s ease;
+  left: 30%;
+  top: 30%;
+}
 
 /* Heading */
 .modal-content h2 {
@@ -45,6 +48,7 @@
     transform: scale(0.7);
     opacity: 0;
   }
+
   to {
     transform: scale(1);
     opacity: 1;
@@ -67,23 +71,29 @@
   color: red;
 }
 
-.train-section{
-color: black;
-padding: 2px;
-margin: 5px;
+.close-btn img {
+  height: 30px;
 }
-.modal-header{
+
+
+.train-section {
+  color: black;
+  padding: 2px;
+  margin: 5px;
+}
+
+.modal-header {
 
   text-align: center;
-  color:#00a507;
+  color: #00a507;
 }
 
-.para{
+.para {
   color: black;
   text-align: center;
 }
 
 .train-section {
-color: rgb(14, 1, 1);
+  color: rgb(14, 1, 1);
   text-align: center;
 }

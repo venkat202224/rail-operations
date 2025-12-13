@@ -9,7 +9,7 @@ const Modal = ({ showModal, sendData}) => {
       <div className="overlay">
         <div className="modal-content">
           <p className="close-btn" onClick={showModal}>
-            ×
+            <img src="https://i.postimg.cc/wxGTBVCf/close-icon.png" alt="close icon"/>
           </p>
 
           <h2 className="modal-header">Hello World!</h2>

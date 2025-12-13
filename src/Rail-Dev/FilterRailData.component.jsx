@@ -19,7 +19,10 @@ const FilterRail = () => {
   return (
     <>
       <button onClick={showList} className="collapsible">
-        🝖
+        <img
+          src="https://i.postimg.cc/tR2pM5RJ/filter-icon-svg.png"
+          alt="filter image"
+        />
       </button>
       <ul className={`side-menu ${open ? "open" : ""}`}>
         {...TrainData.map((item) => <li>{item}</li>)}

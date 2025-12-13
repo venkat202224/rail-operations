@@ -1,4 +1,7 @@
+import { useState } from "react";
 import TableData from "./TableData.Component";
+import Modal from "./Modal.component";
+import FilterRail from "./FilterRailData.component";
 
 const Home = () => {
   const systemData = {
@@ -371,10 +374,52 @@ const Home = () => {
       ],
     },
   };
+
+  const [displayModal, setDisplayModal] = useState(false);
+  const [currentTrain, setCurrentTrain] = useState("");
+  const [tableDataBase, settableDataBase] = useState(systemData.response.properties);
+  const [sortTrain, setSortTrain] = useState(true);
+
+  // sorting code
+
+  const sortTrainId = () => {
+    const sorted = [...tableDataBase].sort((a, b) => {
+      return sortTrain
+        ? a.trainId.localeCompare(b.trainId)
+        : b.trainId.localeCompare(a.trainId);
+    });
+    settableDataBase(sorted);
+    setSortTrain(!sortTrain);
+    console.log(sorted);
+  };
+
+  // Delete code
+
+  const deleteRow = (item) => {
+    const updated = tableDataBase.filter((row) => row.item !== item);
+    settableDataBase(updated);
+  
+  };
+   // pop box code
+
+  const showPopBox = (trainData) => {
+    setDisplayModal(!displayModal);
+    setCurrentTrain(trainData);
+  };
+
   return (
     <>
       <h1>Home Component</h1>
-      <TableData systemData={systemData.response.properties}  />
+      <FilterRail />
+
+      {displayModal && <Modal showModal={showPopBox} sendData={currentTrain} />}
+
+      <TableData
+        systemData={tableDataBase}
+        handleCurrentTrainIdClick={showPopBox}
+        sortTrainId={sortTrainId}
+        deleteRow={deleteRow}
+      />
     </>
   );
 };
